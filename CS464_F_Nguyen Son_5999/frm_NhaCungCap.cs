@@ -39,7 +39,8 @@ namespace CS464_F_Nguyen_Son_5999
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            string sql = "INSERT INTO NHACUNGCAP values('"+txt_mancc.Text+"',N'"+txt_tenncc.Text+"', N'"+txt_diachi.Text+"','"+txt_sdt.Text+"')";
+            lopchung.NonQuery(sql,1);
         }
 
         private void frm_NhaCungCap_Load(object sender, EventArgs e)
